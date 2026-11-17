@@ -5,3 +5,10 @@ Copyright (c) Meta Platforms, Inc. and affiliates, licensed under Apache 2.0.
 The release weights derive from the official SAM2.1 Hiera T/S/B+/L checkpoints.
 SGHAQuant adds grouped Hadamard transforms, quantized encoder weights and
 CUDA inference kernels. The SAM2 dependency is pinned in requirements.txt.
+
+SAM ViT-B/L/H model files derive from Meta's Segment Anything checkpoints
+(https://github.com/facebookresearch/segment-anything), licensed under Apache 2.0.
+
+DINOv3 model files and their derivatives retain the DINOv3 License, reproduced
+in licenses/DINOv3-LICENSE.md and included in each DINOv3 weight archive.
+Original model: Meta's DINOv3 ViT-L/16, LVD-1689M pretrained checkpoint.

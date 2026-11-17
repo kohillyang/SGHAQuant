@@ -1,0 +1,314 @@
+{
+  "repository": "kohillyang/SGHAQuant",
+  "release": "encoders-v1",
+  "assets": {
+    "sam1-vit_b-common.tar.gz": {
+      "family": "sam1",
+      "model": "vit_b",
+      "kind": "common",
+      "bytes": 165974574,
+      "sha256": "af025e965567f2871cdc94d6833821128a34ba12b8a639dbf607ad64536421fc",
+      "files": [
+        {
+          "path": "sam1/vit_b/common/LICENSE.txt",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "sam1/vit_b/common/model.bin",
+          "bytes": 179419136,
+          "sha256": "31e2ceb1ff5576ec060da7aac6bd1f4023bce72740d7b27836d107837aadc919"
+        },
+        {
+          "path": "sam1/vit_b/common/model.json",
+          "bytes": 310,
+          "sha256": "a5f830683034ca70426d72b6772cea0def723f84ae948a3bedfdecf3d6da9e32"
+        },
+        {
+          "path": "sam1/vit_b/common/model.manifest",
+          "bytes": 5556,
+          "sha256": "52c94e2d50a3de9f41a0ed271e82b0baa072fc67c4040c1a5de3955f25818197"
+        }
+      ]
+    },
+    "sam1-vit_b-w4a4.tar.gz": {
+      "family": "sam1",
+      "model": "vit_b",
+      "kind": "w4a4",
+      "bytes": 38046256,
+      "sha256": "13ddba797e0cee57ec91bbf43e1643611b6b7f48f06217bbfcd35e6842842e2e",
+      "files": [
+        {
+          "path": "sam1/vit_b/w4a4/LICENSE.txt",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "sam1/vit_b/w4a4/fc2static.bin",
+          "bytes": 60,
+          "sha256": "b301cb8aa44f769c502cf8c24925083aa18f49ea2e20817d1bb1d142bd23c866"
+        },
+        {
+          "path": "sam1/vit_b/w4a4/weights.bin",
+          "bytes": 78151696,
+          "sha256": "fc42b6ea7ba9a5475fe87a65af8ca41e7cb1e897f9453ca758b61e051cd017e1"
+        }
+      ]
+    },
+    "sam1-vit_b-w8a8.tar.gz": {
+      "family": "sam1",
+      "model": "vit_b",
+      "kind": "w8a8",
+      "bytes": 71553122,
+      "sha256": "939c252d4be29cc9065cdf89c9a9b70571fe6026d02f9c371f664144f8fa8d51",
+      "files": [
+        {
+          "path": "sam1/vit_b/w8a8/LICENSE.txt",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "sam1/vit_b/w8a8/fc2static.bin",
+          "bytes": 60,
+          "sha256": "86644c9038c459f3a25fd0b739d15f307e4385c790bfab5f60dc25ea751eb67a"
+        },
+        {
+          "path": "sam1/vit_b/w8a8/weights.bin",
+          "bytes": 78151696,
+          "sha256": "a3167662978126585322c227e5ea1dfb3d133e213140b6a5a794fd9a7d7ba115"
+        }
+      ]
+    },
+    "sam1-vit_l-common.tar.gz": {
+      "family": "sam1",
+      "model": "vit_l",
+      "kind": "common",
+      "bytes": 573570274,
+      "sha256": "2d003018c7f314f00a2958159a37dface61e075efaf89f5bd6af875716abc076",
+      "files": [
+        {
+          "path": "sam1/vit_l/common/LICENSE.txt",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "sam1/vit_l/common/model.bin",
+          "bytes": 616759296,
+          "sha256": "a3f4543ac0f1175a3b133c45cd5755835f03973d2079de4e8867039335a41f68"
+        },
+        {
+          "path": "sam1/vit_l/common/model.json",
+          "bytes": 313,
+          "sha256": "c98845111970c5466ad48effbfafed8ef52f241f5183280deeefd7b9dc3aa77b"
+        },
+        {
+          "path": "sam1/vit_l/common/model.manifest",
+          "bytes": 11526,
+          "sha256": "d2a6d5618b442be49048c1acae7e669e9c1f6bcf6e32f2c0a2c2edf74db30579"
+        }
+      ]
+    },
+    "sam1-vit_l-w4a4.tar.gz": {
+      "family": "sam1",
+      "model": "vit_l",
+      "kind": "w4a4",
+      "bytes": 133932100,
+      "sha256": "7b170086528c8d3259123d1387007aa616244a00eb18ac595ec2cae55085a6e1",
+      "files": [
+        {
+          "path": "sam1/vit_l/w4a4/LICENSE.txt",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "sam1/vit_l/w4a4/fc2static.bin",
+          "bytes": 108,
+          "sha256": "3cbe9114f2975b232025b68ab2916e3bc4338e241c33600281dbc7022933bc15"
+        },
+        {
+          "path": "sam1/vit_l/w4a4/weights.bin",
+          "bytes": 277610512,
+          "sha256": "2a987f312d161cdd4957ef62a9ae96606fe7f68753b3c427a52d56b357b9b397"
+        }
+      ]
+    },
+    "sam1-vit_l-w8a8.tar.gz": {
+      "family": "sam1",
+      "model": "vit_l",
+      "kind": "w8a8",
+      "bytes": 253195742,
+      "sha256": "c7a49b1af42b80c72ba3091793f85dcbdb7637bba608c43c9f386e62093a2920",
+      "files": [
+        {
+          "path": "sam1/vit_l/w8a8/LICENSE.txt",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "sam1/vit_l/w8a8/fc2static.bin",
+          "bytes": 108,
+          "sha256": "3c04b4af9dbf94044852b46bdac1c5562f996a7a839e1093f28dc9c956e93634"
+        },
+        {
+          "path": "sam1/vit_l/w8a8/weights.bin",
+          "bytes": 277610512,
+          "sha256": "3a9d4fca180834e819947260eac4f55bc4f4e092c68a6b055ba363934d1dc3f4"
+        }
+      ]
+    },
+    "sam1-vit_h-common.tar.gz": {
+      "family": "sam1",
+      "model": "vit_h",
+      "kind": "common",
+      "bytes": 1185271743,
+      "sha256": "086c13d32f7c265596c71420176f36ba556243da2caebcd382d026ff0f91679c",
+      "files": [
+        {
+          "path": "sam1/vit_h/common/LICENSE.txt",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "sam1/vit_h/common/model.bin",
+          "bytes": 1274389504,
+          "sha256": "5159f7280507d2ec5c62404cc70f13bec55db27a31bf6f3060a5ea7182c0312c"
+        },
+        {
+          "path": "sam1/vit_h/common/model.json",
+          "bytes": 313,
+          "sha256": "a8a7d81e5e6e506d145840a7ac48d6a5c3b29f68c3e274a9c5d6ff31662d3a66"
+        },
+        {
+          "path": "sam1/vit_h/common/model.manifest",
+          "bytes": 15451,
+          "sha256": "517dbcd4aa4f7872119d5e25f5027e361493cdd97e9c1c0a1629fcad5aec7103"
+        }
+      ]
+    },
+    "sam1-vit_h-w4a4.tar.gz": {
+      "family": "sam1",
+      "model": "vit_h",
+      "kind": "w4a4",
+      "bytes": 276882225,
+      "sha256": "717de8312bd3e5c1b3a9212a112ef5ea5de59644391cbbfa321580e9a5d63051",
+      "files": [
+        {
+          "path": "sam1/vit_h/w4a4/LICENSE.txt",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "sam1/vit_h/w4a4/fc2static.bin",
+          "bytes": 140,
+          "sha256": "df866fbea6c4447ee5ba0b8bb3fbbfb5fb1fe128d0a66a91f34e97d71ac9726e"
+        },
+        {
+          "path": "sam1/vit_h/w4a4/weights.bin",
+          "bytes": 578027536,
+          "sha256": "b3975b0006e262355b872d84f4918309592a514268c1c538dea5616ba2207815"
+        }
+      ]
+    },
+    "sam1-vit_h-w8a8.tar.gz": {
+      "family": "sam1",
+      "model": "vit_h",
+      "kind": "w8a8",
+      "bytes": 525430316,
+      "sha256": "9ac266c617e2ea2bf63478de7a30e7ea06b292b811ff942bfb0e0f7457ecfa99",
+      "files": [
+        {
+          "path": "sam1/vit_h/w8a8/LICENSE.txt",
+          "bytes": 11357,
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        },
+        {
+          "path": "sam1/vit_h/w8a8/fc2static.bin",
+          "bytes": 140,
+          "sha256": "4f22fbcfee3af1d551689c1bd8a0b1feaa2cf0cb27f8ff183eedfae0a03f5a3d"
+        },
+        {
+          "path": "sam1/vit_h/w8a8/weights.bin",
+          "bytes": 578027536,
+          "sha256": "f0bb33410a4d41c1f0e26cb19bd9d4a016b0225b9cc450456dd5dfbcc1760c2f"
+        }
+      ]
+    },
+    "dinov3-vit_l-common.tar.gz": {
+      "family": "dinov3",
+      "model": "vit_l",
+      "kind": "common",
+      "bytes": 564890251,
+      "sha256": "f01860ccfadf1855ee896ee02035ef44a57337a0d621f31526b1d5db22ca7764",
+      "files": [
+        {
+          "path": "dinov3/vit_l/common/LICENSE.txt",
+          "bytes": 7503,
+          "sha256": "25d122eb8f5b880fd23c736fb6ea8018ee45c12237e00b8a86d14c653904999e"
+        },
+        {
+          "path": "dinov3/vit_l/common/model.bin",
+          "bytes": 606908416,
+          "sha256": "c09753273e22cc56faeb4b649f166cd9e09cfffd69a35ec0bd97f479be7626f6"
+        },
+        {
+          "path": "dinov3/vit_l/common/model.json",
+          "bytes": 457,
+          "sha256": "05571301ae143a9c5fdc15f197471e79de6eca6c035b968e0657487a70b0092b"
+        },
+        {
+          "path": "dinov3/vit_l/common/model.manifest",
+          "bytes": 10591,
+          "sha256": "bde3cf2885ab6cebac0ae8966bc73661e2bb5396c2729db933dbd898f940f2b8"
+        }
+      ]
+    },
+    "dinov3-vit_l-w4a4.tar.gz": {
+      "family": "dinov3",
+      "model": "vit_l",
+      "kind": "w4a4",
+      "bytes": 134036874,
+      "sha256": "a9779dee1e481026eddd93f730582a1d602be33769a84ce95e2a370fd86e04c5",
+      "files": [
+        {
+          "path": "dinov3/vit_l/w4a4/LICENSE.txt",
+          "bytes": 7503,
+          "sha256": "25d122eb8f5b880fd23c736fb6ea8018ee45c12237e00b8a86d14c653904999e"
+        },
+        {
+          "path": "dinov3/vit_l/w4a4/fc2static.bin",
+          "bytes": 3376,
+          "sha256": "d9d624c3ce352dd2d4eee3e9322ba5c5d209807762635bf898bdb2bf1ba27768"
+        },
+        {
+          "path": "dinov3/vit_l/w4a4/weights.bin",
+          "bytes": 277610512,
+          "sha256": "6224d09f42e8d657c2396237bcfb570caa001d13336bac1925730e4e58b07640"
+        }
+      ]
+    },
+    "dinov3-vit_l-w8a8.tar.gz": {
+      "family": "dinov3",
+      "model": "vit_l",
+      "kind": "w8a8",
+      "bytes": 253485338,
+      "sha256": "76e283630998a57e489ffb35ddb0bc1b9ad123afeefba670dfd144406c58a958",
+      "files": [
+        {
+          "path": "dinov3/vit_l/w8a8/LICENSE.txt",
+          "bytes": 7503,
+          "sha256": "25d122eb8f5b880fd23c736fb6ea8018ee45c12237e00b8a86d14c653904999e"
+        },
+        {
+          "path": "dinov3/vit_l/w8a8/fc2static.bin",
+          "bytes": 3376,
+          "sha256": "bce8943b0d9748c643ffe63fdf7cad9640d2a1d5004b5f2a10e166e6102ce902"
+        },
+        {
+          "path": "dinov3/vit_l/w8a8/weights.bin",
+          "bytes": 277610512,
+          "sha256": "e137d64e1c93e89acea4adfab2796995ccc19dcdd3db009ccba48fae970458c6"
+        }
+      ]
+    }
+  }
+}

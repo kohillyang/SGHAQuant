@@ -10,6 +10,7 @@ import tempfile
 import time
 
 from sghaquant.runtime import MODELS, ROOT, SEEDS, engine_command, engine_environment
+from sghaquant.encoders import ENCODERS, command as encoder_command, preprocess
 
 def cool_gpu(limit):
     device = os.environ.get('CUDA_VISIBLE_DEVICES', '0').split(',')[0]
@@ -26,7 +27,8 @@ def cool_gpu(limit):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--model', choices=[*MODELS, 'all'], default='all')
+    p.add_argument('--family', choices=['sam21', *ENCODERS], default='sam21')
+    p.add_argument('--model', choices=[*MODELS, 'vit_b', 'vit_l', 'vit_h', 'all'], default='all')
     p.add_argument('--precision', choices=['w4a4', 'w8a8', 'both'], default='both')
     p.add_argument('--seed', type=int, choices=SEEDS, default=SEEDS[0])
     p.add_argument('--batch', nargs='+', type=int, default=[1, 8])
@@ -34,41 +36,60 @@ def main():
     p.add_argument('--iters', type=int, default=200)
     p.add_argument('--rounds', type=int, default=6)
     inputs = p.add_mutually_exclusive_group()
-    inputs.add_argument('--input', type=Path, help='float32 NCHW 1024x1024 tensor; omitted: zeros')
-    inputs.add_argument('--image', type=Path, help='RGB image, preprocessed with SAM2Transforms')
+    inputs.add_argument('--input', type=Path, help='native NCHW input tensor; omitted: zeros')
+    inputs.add_argument('--image', type=Path, help='RGB image, repeated to fill the batch')
     p.add_argument('--max-start-temperature', type=int, default=50)
     p.add_argument('--weights', type=Path, default=ROOT / 'weights')
-    p.add_argument('--engine', type=Path, default=ROOT / 'build/sam21')
+    p.add_argument('--engine', type=Path)
     p.add_argument('--output', type=Path, default=ROOT / 'outputs/benchmark.json')
     args = p.parse_args()
     if min(args.batch + [args.iters, args.rounds]) < 1 or args.warmup < 0:
         p.error('batch, iters and rounds must be positive; warmup must be nonnegative')
-    models = list(MODELS) if args.model == 'all' else [args.model]
+    available = MODELS if args.family == 'sam21' else ENCODERS[args.family]
+    if args.model != 'all' and args.model not in available:
+        p.error(f'{args.family} models: {list(available)}')
+    models = list(available) if args.model == 'all' else [args.model]
     precisions = ['w8a8', 'w4a4'] if args.precision == 'both' else [args.precision]
     measurements = {}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     temp = tempfile.TemporaryDirectory(prefix='sghaquant-bench-')
+    prepared = None
     if args.image:
         from PIL import Image
         import numpy as np
-        from sam2.utils.transforms import SAM2Transforms
         image = Image.open(args.image).convert('RGB')
-        tensor = SAM2Transforms(resolution=1024, mask_threshold=0.0)(image)
-        args.input = Path(temp.name) / 'input.bin'
-        tensor.numpy().astype(np.float32).tofile(args.input)
+        if args.family == 'sam21':
+            from sam2.utils.transforms import SAM2Transforms
+            tensor = SAM2Transforms(resolution=1024, mask_threshold=0.0)(image)
+            args.input = Path(temp.name) / 'input.bin'
+            tensor.numpy().astype(np.float32).tofile(args.input)
+        else:
+            prepared, _ = preprocess(image, args.family)
     for batch in args.batch:
+        current_input = args.input
+        if prepared is not None:
+            current_input = Path(temp.name) / f'input_b{batch}.bin'
+            np.repeat(prepared, batch, axis=0).tofile(current_input)
         cells = [(model, precision) for model in models for precision in precisions]
         for rep in range(args.rounds):
             for model, precision in cells if rep % 2 == 0 else reversed(cells):
                 cool_gpu(args.max_start_temperature)
-                cmd = engine_command(model, precision, args.seed, args.weights, args.engine)
+                if args.family == 'sam21':
+                    cmd = engine_command(model, precision, args.seed, args.weights, args.engine or ROOT / 'build/sam21')
+                else:
+                    cmd = encoder_command(args.family, model, precision, args.weights, batch)
+                    if args.engine:
+                        cmd[0] = str(args.engine.resolve())
                 cmd += ['--batch', str(batch), '--warmup', str(args.warmup), '--iters', str(args.iters)]
-                if args.input:
-                    cmd += ['--input', str(args.input.resolve())]
-                result = subprocess.run(cmd, capture_output=True, text=True, env=engine_environment())
+                if current_input:
+                    cmd += ['--input', str(current_input.resolve())]
+                env = engine_environment()
+                if args.family != 'sam21':
+                    env.pop('NANO_LN_L1', None)
+                result = subprocess.run(cmd, capture_output=True, text=True, env=env)
                 if result.returncode:
                     raise RuntimeError(result.stdout + result.stderr)
-                match = re.search(r'latency_ms mean=[\d.]+ p50=([\d.]+)', result.stdout)
+                match = re.search(r'latency_ms(?:/batch)? mean=[\d.]+ p50=([\d.]+)', result.stdout)
                 if not match:
                     raise RuntimeError(result.stdout)
                 key = f'{model}/{precision}/b{batch}'

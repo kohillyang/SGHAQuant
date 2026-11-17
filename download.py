@@ -1,4 +1,4 @@
-"""Download and verify the SAM2.1 release weights."""
+"""Download and verify the native encoder weights."""
 import argparse
 import hashlib
 import json
@@ -10,6 +10,7 @@ import tempfile
 from urllib.request import urlopen
 
 from sghaquant.runtime import MODELS, ROOT, SEEDS
+from sghaquant.encoders import ENCODERS
 
 def sha256(path):
     digest = hashlib.sha256()
@@ -60,12 +61,28 @@ def install(name, record, manifest, destination, source=None):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--model', choices=[*MODELS, 'all'], default='tiny')
+    p.add_argument('--family', choices=['sam21', *ENCODERS], default='sam21')
+    p.add_argument('--model', choices=[*MODELS, 'vit_b', 'vit_l', 'vit_h', 'all'])
     p.add_argument('--precision', choices=['w4a4', 'w8a8', 'both'], default='both')
     p.add_argument('--seeds', default=str(SEEDS[0]), help='all or comma-separated calibration seeds')
     p.add_argument('--output', type=Path, default=ROOT / 'weights')
     p.add_argument('--source-directory', type=Path, help='install previously downloaded release archives')
     args = p.parse_args()
+    if args.family != 'sam21':
+        available = ENCODERS[args.family]
+        model = args.model or available[0]
+        if model != 'all' and model not in available:
+            p.error(f'{args.family} models: {available}')
+        manifest = json.loads((ROOT / 'weights_encoders.json').read_text())
+        models = list(available) if model == 'all' else [model]
+        kinds = ['common'] + (['w4a4', 'w8a8'] if args.precision == 'both' else [args.precision])
+        for name, record in manifest['assets'].items():
+            if record['family'] == args.family and record['model'] in models and record['kind'] in kinds:
+                install(name, record, manifest, args.output.resolve(), args.source_directory)
+        return
+    args.model = args.model or 'tiny'
+    if args.model not in (*MODELS, 'all'):
+        p.error(f'sam21 models: {list(MODELS)}')
     seeds = SEEDS if args.seeds == 'all' else [int(s) for s in args.seeds.split(',')]
     if any(s not in SEEDS for s in seeds):
         p.error(f'Available seeds: {SEEDS}')
