@@ -51,4 +51,6 @@ Evaluation uses the first 1,000 sorted COCO validation IDs, up to eight instance
 | Hiera-B+ | 60.40 | 60.62 ± 0.17 | 4.13 / 32.72 | 3.38 / 27.47 |
 | Hiera-L | 68.63 | 68.34 ± 0.18 | 9.09 / 72.40 | 7.17 / 57.53 |
 
-Latency covers the encoder and neck with CUDA graphs: 200 warmup iterations, 200 measured iterations, median of six rounds, GPU at or below 50°C before each run. The timing input above is from COCO train2017; omitting `--image` uses zeros. W4A4 uses per-token scales at qkv/fc1 and one static scale per fc2 layer; W8A8 uses the paper's GPTQ weights and dynamic fc2 scales. Per-seed accuracy values are in [results/paper.json](results/paper.json).
+Latency covers the encoder and neck with CUDA graphs: 200 warmup iterations, 200 measured iterations, median of six rounds, GPU at or below 50°C before each run. The timing input above is from COCO train2017; omitting `--image` uses zeros. W4A4 uses per-token scales at qkv/fc1 and one static scale per fc2 layer; W8A8 uses the paper's GPTQ weights and dynamic fc2 scales.
+
+Per-seed results: [paper](results/paper.json), [reproduction](results/validation.json).
