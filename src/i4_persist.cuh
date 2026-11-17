@@ -1,3 +1,18 @@
+// Copyright 2026 SGHAQuant contributors
+// SPDX-License-Identifier: Apache-2.0
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 #pragma once
 // i4_persist.cuh -- persistent INT4 GEMMs for the W4A4 hiera encoder: the qkv GEMM under --win8 (W8G16 epilogue)
 // and the DHD fc1 GEMM (GELU + H_64 + per-(token, 128) int4 producer).  2026-10-14 (int4_gemm_opt_20261014).

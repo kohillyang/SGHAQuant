@@ -1,3 +1,18 @@
+// Copyright 2026 SGHAQuant contributors
+// SPDX-License-Identifier: Apache-2.0
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 // Hiera-only production-style Monarch fused LN/raw -> A Pi B Pi^-1 -> clip/G128/pack.
 // SAME prospective TC precision: FP16 LN/factors/interstage/final, FP32 MMA acc.
 // Initial fusion covers K<=1152; largefc2 must use separately counted fallback, never silently omitted.

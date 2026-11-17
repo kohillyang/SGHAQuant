@@ -1,3 +1,18 @@
+// Copyright 2026 SGHAQuant contributors
+// SPDX-License-Identifier: Apache-2.0
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     https://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 // nano_samv1.cu — the original SAM (v1) image encoder (ImageEncoderViT, ViT-B / L / H) on the nano kernels.
 //
 // Same structure as nano_sam3.cu (a natural-order residual stream; the LayerNorm writes its rows
