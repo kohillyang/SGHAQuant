@@ -1,0 +1,930 @@
+{
+  "release": "sam21-v1",
+  "repository": "kohillyang/SGHAQuant",
+  "assets": {
+    "sam21-tiny-reference.tar.gz": {
+      "model": "tiny",
+      "kind": "reference",
+      "bytes": 145374690,
+      "sha256": "c4409879d4a68d83e9d7b418008808ef0930cd113cbbcbc4b50a5825ad8cb9e7",
+      "files": [
+        {
+          "path": "tiny/reference.pt",
+          "bytes": 156008466,
+          "sha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69"
+        }
+      ]
+    },
+    "sam21-tiny-w8a8.tar.gz": {
+      "model": "tiny",
+      "kind": "w8a8",
+      "bytes": 84675584,
+      "sha256": "bff392db3ec50c46ee7e41a1d820c9287442c8462676d5e51f898eb00ef55cc2",
+      "files": [
+        {
+          "path": "tiny/w8a8/model.bin",
+          "bytes": 66919936,
+          "sha256": "2e37e1f33d16fb2247a02aa719399fce406e48e35db91daeabf675849f8aba34"
+        },
+        {
+          "path": "tiny/w8a8/model.json",
+          "bytes": 1507,
+          "sha256": "c9178e471b319c49bc5c05b82661b8e8cb234bae965a1b90f450744a31327519"
+        },
+        {
+          "path": "tiny/w8a8/model.manifest",
+          "bytes": 5277,
+          "sha256": "9d50d323c8c186c3da95e42c858a67194f65171a0868b77ddbe5bb6f3ec94ecc"
+        },
+        {
+          "path": "tiny/w8a8/weights.bin",
+          "bytes": 24231952,
+          "sha256": "8105be7bd24f4026fd355b7bee791ca2c73542cddd638785cbd4c74554710116"
+        }
+      ]
+    },
+    "sam21-tiny-w4a4-20261010.tar.gz": {
+      "model": "tiny",
+      "kind": "w4a4-20261010",
+      "bytes": 75383057,
+      "sha256": "7f0c889fad54103ca77bd7261338fc33bbf09d59d8c0699218f80e12071a1384",
+      "files": [
+        {
+          "path": "tiny/w4a4/20261010/factors.bin",
+          "bytes": 220864,
+          "sha256": "189b942a98d0a6c4734efc261dad2bf945c444b0bdd3901793c7fe070f895ddc"
+        },
+        {
+          "path": "tiny/w4a4/20261010/fc2static.bin",
+          "bytes": 748,
+          "sha256": "be634e9be312f6dc95f7580e9c81fa78a8dfb34ae79256ae6e90d5630bb24abc"
+        },
+        {
+          "path": "tiny/w4a4/20261010/model.bin",
+          "bytes": 66919936,
+          "sha256": "97517754caad5b92d9c9ac793873d850f6ad172e03f5c34a5d1061dfe1678c94"
+        },
+        {
+          "path": "tiny/w4a4/20261010/model.json",
+          "bytes": 1507,
+          "sha256": "c9178e471b319c49bc5c05b82661b8e8cb234bae965a1b90f450744a31327519"
+        },
+        {
+          "path": "tiny/w4a4/20261010/model.manifest",
+          "bytes": 5277,
+          "sha256": "9d50d323c8c186c3da95e42c858a67194f65171a0868b77ddbe5bb6f3ec94ecc"
+        },
+        {
+          "path": "tiny/w4a4/20261010/weights.bin",
+          "bytes": 24231952,
+          "sha256": "c5890b58e06e33ba5d5a5b268e46854a84c8c1893791590b31162e01ceb734bc"
+        }
+      ]
+    },
+    "sam21-tiny-w4a4-20261011.tar.gz": {
+      "model": "tiny",
+      "kind": "w4a4-20261011",
+      "bytes": 75384466,
+      "sha256": "285f1358234cc0bbe469ee76858f8a9b898cc8a7dab3d14831ecf9fa141e25ae",
+      "files": [
+        {
+          "path": "tiny/w4a4/20261011/factors.bin",
+          "bytes": 220864,
+          "sha256": "1415710ca3efec7de5d28065ad70bec7b4dec3d1d60aabdc63dd24a8e2a84071"
+        },
+        {
+          "path": "tiny/w4a4/20261011/fc2static.bin",
+          "bytes": 748,
+          "sha256": "35da339a2cceab522cd5af19f8348ac4a6d874192be7010662e1af0b7dd33ee0"
+        },
+        {
+          "path": "tiny/w4a4/20261011/model.bin",
+          "bytes": 66919936,
+          "sha256": "ccae485af59da63ebe8f5639cc91fdacfcc2eb8d6b85e035b096d341a7c93e23"
+        },
+        {
+          "path": "tiny/w4a4/20261011/model.json",
+          "bytes": 1507,
+          "sha256": "c9178e471b319c49bc5c05b82661b8e8cb234bae965a1b90f450744a31327519"
+        },
+        {
+          "path": "tiny/w4a4/20261011/model.manifest",
+          "bytes": 5277,
+          "sha256": "9d50d323c8c186c3da95e42c858a67194f65171a0868b77ddbe5bb6f3ec94ecc"
+        },
+        {
+          "path": "tiny/w4a4/20261011/weights.bin",
+          "bytes": 24231952,
+          "sha256": "47e23dd94522c75aa06ab60c1db0884b717631165507ab6defd1e577429848e9"
+        }
+      ]
+    },
+    "sam21-tiny-w4a4-20261012.tar.gz": {
+      "model": "tiny",
+      "kind": "w4a4-20261012",
+      "bytes": 75381810,
+      "sha256": "d64b5d7df05c5c29037f5a1713a106ab3ab2f9bcf1c686649a117f8e98a545a2",
+      "files": [
+        {
+          "path": "tiny/w4a4/20261012/factors.bin",
+          "bytes": 220864,
+          "sha256": "bdd9854f5c015741f831b86d611cf57bf536caf9f8bb8b198b9980c8f064cb36"
+        },
+        {
+          "path": "tiny/w4a4/20261012/fc2static.bin",
+          "bytes": 748,
+          "sha256": "b03c63e2d1b0e90e9ab5fd7bffa0076a4ef439f091170bbbc0bb08bb286d2a15"
+        },
+        {
+          "path": "tiny/w4a4/20261012/model.bin",
+          "bytes": 66919936,
+          "sha256": "98e8df87d13ebfea31399f1734f0e6ceae836e6702788afe6ac5cb6160e9b78b"
+        },
+        {
+          "path": "tiny/w4a4/20261012/model.json",
+          "bytes": 1507,
+          "sha256": "c9178e471b319c49bc5c05b82661b8e8cb234bae965a1b90f450744a31327519"
+        },
+        {
+          "path": "tiny/w4a4/20261012/model.manifest",
+          "bytes": 5277,
+          "sha256": "9d50d323c8c186c3da95e42c858a67194f65171a0868b77ddbe5bb6f3ec94ecc"
+        },
+        {
+          "path": "tiny/w4a4/20261012/weights.bin",
+          "bytes": 24231952,
+          "sha256": "69b4b460d15da7a0e91214a29b1bf2719652e59145d17f2aae144b1badfa77c9"
+        }
+      ]
+    },
+    "sam21-tiny-w4a4-20261013.tar.gz": {
+      "model": "tiny",
+      "kind": "w4a4-20261013",
+      "bytes": 75383124,
+      "sha256": "6e25f48be3e66c6f594c0ab86bb5abe76eec4ae7dc1c5bfb573bfb24462bfe08",
+      "files": [
+        {
+          "path": "tiny/w4a4/20261013/factors.bin",
+          "bytes": 220864,
+          "sha256": "f8fae9cd75656c74d33187b1820dd7449024f68f3b9fd3a45edfd2e88d2c351b"
+        },
+        {
+          "path": "tiny/w4a4/20261013/fc2static.bin",
+          "bytes": 748,
+          "sha256": "fcb7314364a66bb1e7120bfa7b72af0fa3cf7cb1f19b4663fcdd99488ef1768b"
+        },
+        {
+          "path": "tiny/w4a4/20261013/model.bin",
+          "bytes": 66919936,
+          "sha256": "f74404203eafa7591b43cceb944e330d16ea61d10704b4f1e2f94becb46aa797"
+        },
+        {
+          "path": "tiny/w4a4/20261013/model.json",
+          "bytes": 1507,
+          "sha256": "c9178e471b319c49bc5c05b82661b8e8cb234bae965a1b90f450744a31327519"
+        },
+        {
+          "path": "tiny/w4a4/20261013/model.manifest",
+          "bytes": 5277,
+          "sha256": "9d50d323c8c186c3da95e42c858a67194f65171a0868b77ddbe5bb6f3ec94ecc"
+        },
+        {
+          "path": "tiny/w4a4/20261013/weights.bin",
+          "bytes": 24231952,
+          "sha256": "2dee8e1b843518c0f518237df4c4ab9d019a434dfcece70e643e8008f65c3e61"
+        }
+      ]
+    },
+    "sam21-tiny-w4a4-20261014.tar.gz": {
+      "model": "tiny",
+      "kind": "w4a4-20261014",
+      "bytes": 75379214,
+      "sha256": "8dd7cdfb9e79807dea8db3194719974d500d0badb49466d2e0a3011bfb2eb2aa",
+      "files": [
+        {
+          "path": "tiny/w4a4/20261014/factors.bin",
+          "bytes": 220864,
+          "sha256": "715cf3374d03180e8812a079379deeb961c469803e991a042dec8028241339dd"
+        },
+        {
+          "path": "tiny/w4a4/20261014/fc2static.bin",
+          "bytes": 748,
+          "sha256": "5962a33c96eee47beab323abf4d72600202758080483b528aab317e532337d69"
+        },
+        {
+          "path": "tiny/w4a4/20261014/model.bin",
+          "bytes": 66919936,
+          "sha256": "2f5440e1de84923098b479a305a7d45c7e072fce8fe00500716bac035b6bbca2"
+        },
+        {
+          "path": "tiny/w4a4/20261014/model.json",
+          "bytes": 1507,
+          "sha256": "c9178e471b319c49bc5c05b82661b8e8cb234bae965a1b90f450744a31327519"
+        },
+        {
+          "path": "tiny/w4a4/20261014/model.manifest",
+          "bytes": 5277,
+          "sha256": "9d50d323c8c186c3da95e42c858a67194f65171a0868b77ddbe5bb6f3ec94ecc"
+        },
+        {
+          "path": "tiny/w4a4/20261014/weights.bin",
+          "bytes": 24231952,
+          "sha256": "1c20cb7cb440d3e015e040c8957301963e1da71043c1796454b801b00364e6fe"
+        }
+      ]
+    },
+    "sam21-small-reference.tar.gz": {
+      "model": "small",
+      "kind": "reference",
+      "bytes": 171849668,
+      "sha256": "f90debd62f2a5f27a686847bef47eab416c2f87af1c8d49a107d93d6c9755c73",
+      "files": [
+        {
+          "path": "small/reference.pt",
+          "bytes": 184416285,
+          "sha256": "6d1aa6f30de5c92224f8172114de081d104bbd23dd9dc5c58996f0cad5dc4d38"
+        }
+      ]
+    },
+    "sam21-small-w8a8.tar.gz": {
+      "model": "small",
+      "kind": "w8a8",
+      "bytes": 103944973,
+      "sha256": "29a0a20e59bde3143ad4125aba376fbadcfb8d3dcc0d224dbf5d98c160851189",
+      "files": [
+        {
+          "path": "small/w8a8/model.bin",
+          "bytes": 81127936,
+          "sha256": "d3a0dee1d0052d288ebefd8ff32f74baae40a0205c9dec4265630a1b8fb691ee"
+        },
+        {
+          "path": "small/w8a8/model.json",
+          "bytes": 1957,
+          "sha256": "f458317b12cd37d5fd2715f46a3a35f9d229f0a7e536e01afbe2e98dfd06335e"
+        },
+        {
+          "path": "small/w8a8/model.manifest",
+          "bytes": 6913,
+          "sha256": "8b69b9f925be2e96f9ac2deda746d1919b0d73a215f5e4c3f4b0bc0996d360b8"
+        },
+        {
+          "path": "small/w8a8/weights.bin",
+          "bytes": 30769168,
+          "sha256": "3d6790524634407bad69e2cef91865e2e609c20cab30bd045b4d47d7e516f961"
+        }
+      ]
+    },
+    "sam21-small-w4a4-20261010.tar.gz": {
+      "model": "small",
+      "kind": "w4a4-20261010",
+      "bytes": 92159041,
+      "sha256": "e812cf437092df0be51c0ac3f4e052108bcf8311d92968d5df49b5cb75ab48a8",
+      "files": [
+        {
+          "path": "small/w4a4/20261010/factors.bin",
+          "bytes": 294736,
+          "sha256": "71de86adec80011ee8c5fe05496e941f6397124d05ec035bb6ab74d3791a7746"
+        },
+        {
+          "path": "small/w4a4/20261010/fc2static.bin",
+          "bytes": 988,
+          "sha256": "da7281c7349d64738cbb0f5dd8aec7c7f7dac182a8cb814fc10c933bacb79344"
+        },
+        {
+          "path": "small/w4a4/20261010/model.bin",
+          "bytes": 81127936,
+          "sha256": "e38576f1fabc6b827c40a7a1609773788b11ef55db620b4a36e4cb6d652d1f0d"
+        },
+        {
+          "path": "small/w4a4/20261010/model.json",
+          "bytes": 1957,
+          "sha256": "f458317b12cd37d5fd2715f46a3a35f9d229f0a7e536e01afbe2e98dfd06335e"
+        },
+        {
+          "path": "small/w4a4/20261010/model.manifest",
+          "bytes": 6913,
+          "sha256": "8b69b9f925be2e96f9ac2deda746d1919b0d73a215f5e4c3f4b0bc0996d360b8"
+        },
+        {
+          "path": "small/w4a4/20261010/weights.bin",
+          "bytes": 30769168,
+          "sha256": "f2879d6f48ce4ab65089609f4cf117a506e6b5a90413cf5629a65bb268afd76e"
+        }
+      ]
+    },
+    "sam21-small-w4a4-20261011.tar.gz": {
+      "model": "small",
+      "kind": "w4a4-20261011",
+      "bytes": 92160708,
+      "sha256": "7e1b5be34b2bdd88270ae7d66fe375de215dbe3c2646de69bee9e3fc1f86addf",
+      "files": [
+        {
+          "path": "small/w4a4/20261011/factors.bin",
+          "bytes": 294736,
+          "sha256": "3fdc28b88981feb85529f5697888997f9e3a2325800c67f3a9951eed2d1dc514"
+        },
+        {
+          "path": "small/w4a4/20261011/fc2static.bin",
+          "bytes": 988,
+          "sha256": "9c69ed6ab93c1dca502137ac6dea5973039a4f179194e282bed52cd0917c0419"
+        },
+        {
+          "path": "small/w4a4/20261011/model.bin",
+          "bytes": 81127936,
+          "sha256": "73fdeedd862920ab15ea2d9ede272c658375265d855b3b33200e2a96266b8ff7"
+        },
+        {
+          "path": "small/w4a4/20261011/model.json",
+          "bytes": 1957,
+          "sha256": "f458317b12cd37d5fd2715f46a3a35f9d229f0a7e536e01afbe2e98dfd06335e"
+        },
+        {
+          "path": "small/w4a4/20261011/model.manifest",
+          "bytes": 6913,
+          "sha256": "8b69b9f925be2e96f9ac2deda746d1919b0d73a215f5e4c3f4b0bc0996d360b8"
+        },
+        {
+          "path": "small/w4a4/20261011/weights.bin",
+          "bytes": 30769168,
+          "sha256": "8d27b5b80968f3dea896a60753f764104a5c76ddece50e7d5678e1c5982dde24"
+        }
+      ]
+    },
+    "sam21-small-w4a4-20261012.tar.gz": {
+      "model": "small",
+      "kind": "w4a4-20261012",
+      "bytes": 92161255,
+      "sha256": "f60fa94279e75e825b19468d7cd75e3c4a37f3544c9f9d4ac7b6c7ce5c2daf41",
+      "files": [
+        {
+          "path": "small/w4a4/20261012/factors.bin",
+          "bytes": 294736,
+          "sha256": "28125d3cff40d49dfe9974c19da7b1647280ea93af1e87bb890a9c4093888e1b"
+        },
+        {
+          "path": "small/w4a4/20261012/fc2static.bin",
+          "bytes": 988,
+          "sha256": "4820c65b4261e2fe18a981573d46f12249990bb9d49b4d6700947ba88ccd9e81"
+        },
+        {
+          "path": "small/w4a4/20261012/model.bin",
+          "bytes": 81127936,
+          "sha256": "426f6d3d03cab75c8bab79228bff495379ba16e9bed7c0b4927a1bf1887d474d"
+        },
+        {
+          "path": "small/w4a4/20261012/model.json",
+          "bytes": 1957,
+          "sha256": "f458317b12cd37d5fd2715f46a3a35f9d229f0a7e536e01afbe2e98dfd06335e"
+        },
+        {
+          "path": "small/w4a4/20261012/model.manifest",
+          "bytes": 6913,
+          "sha256": "8b69b9f925be2e96f9ac2deda746d1919b0d73a215f5e4c3f4b0bc0996d360b8"
+        },
+        {
+          "path": "small/w4a4/20261012/weights.bin",
+          "bytes": 30769168,
+          "sha256": "1659140cc2b05de7ca3d679cf18ab865d0fbe463e10ed8eaf3001f2d596f972c"
+        }
+      ]
+    },
+    "sam21-small-w4a4-20261013.tar.gz": {
+      "model": "small",
+      "kind": "w4a4-20261013",
+      "bytes": 92160371,
+      "sha256": "02462e58a0724fb6f01e057b646ccd48d8e4a8f9b64be73219b17f25a8bfc3e9",
+      "files": [
+        {
+          "path": "small/w4a4/20261013/factors.bin",
+          "bytes": 294736,
+          "sha256": "8d4c64180d635087bbfbd5880cb013d5ae507bb14d3601d08adde335e723f498"
+        },
+        {
+          "path": "small/w4a4/20261013/fc2static.bin",
+          "bytes": 988,
+          "sha256": "58172ee309a20cf35f9b87d36ed345e5be303e578a82fa8554dd3792d06f3b99"
+        },
+        {
+          "path": "small/w4a4/20261013/model.bin",
+          "bytes": 81127936,
+          "sha256": "a9d123ff1bec88b4d92ffe28c2687f8646f11ed938bf8119827dd6ed9edd6d6c"
+        },
+        {
+          "path": "small/w4a4/20261013/model.json",
+          "bytes": 1957,
+          "sha256": "f458317b12cd37d5fd2715f46a3a35f9d229f0a7e536e01afbe2e98dfd06335e"
+        },
+        {
+          "path": "small/w4a4/20261013/model.manifest",
+          "bytes": 6913,
+          "sha256": "8b69b9f925be2e96f9ac2deda746d1919b0d73a215f5e4c3f4b0bc0996d360b8"
+        },
+        {
+          "path": "small/w4a4/20261013/weights.bin",
+          "bytes": 30769168,
+          "sha256": "aa628d9a849bff5b57a8e7d107c4103948cd6a38b8740d3f8792100412029a8a"
+        }
+      ]
+    },
+    "sam21-small-w4a4-20261014.tar.gz": {
+      "model": "small",
+      "kind": "w4a4-20261014",
+      "bytes": 92161763,
+      "sha256": "e9a197adb09433d1225d391eb0988edf556d85c8934f26f34773bdafd017cf0e",
+      "files": [
+        {
+          "path": "small/w4a4/20261014/factors.bin",
+          "bytes": 294736,
+          "sha256": "9bb435b445173eb3b83169cdc73e1424c4fc45fc0873e9bc9b5f26089849d575"
+        },
+        {
+          "path": "small/w4a4/20261014/fc2static.bin",
+          "bytes": 988,
+          "sha256": "1dfee382b0c10839311043fded9bfac812457660185b98fde4635655ce86736f"
+        },
+        {
+          "path": "small/w4a4/20261014/model.bin",
+          "bytes": 81127936,
+          "sha256": "f1814693d32fb9e3fa7b6be1d0c1889472b1b7404cd7f422b15d660edf312d32"
+        },
+        {
+          "path": "small/w4a4/20261014/model.json",
+          "bytes": 1957,
+          "sha256": "f458317b12cd37d5fd2715f46a3a35f9d229f0a7e536e01afbe2e98dfd06335e"
+        },
+        {
+          "path": "small/w4a4/20261014/model.manifest",
+          "bytes": 6913,
+          "sha256": "8b69b9f925be2e96f9ac2deda746d1919b0d73a215f5e4c3f4b0bc0996d360b8"
+        },
+        {
+          "path": "small/w4a4/20261014/weights.bin",
+          "bytes": 30769168,
+          "sha256": "eaeedc019c8a14bcd804aef888794954b62a005401e002f27de273e98d9aa389"
+        }
+      ]
+    },
+    "sam21-base_plus-reference.tar.gz": {
+      "model": "base_plus",
+      "kind": "reference",
+      "bytes": 301519368,
+      "sha256": "adf4154c0266ccb2e4bbf235e2abb814ed8d1ed1ce79cca8cbbc190488f28cd6",
+      "files": [
+        {
+          "path": "base_plus/reference.pt",
+          "bytes": 323606802,
+          "sha256": "a2345aede8715ab1d5d31b4a509fb160c5a4af1970f199d9054ccfb746c004c5"
+        }
+      ]
+    },
+    "sam21-base_plus-w8a8.tar.gz": {
+      "model": "base_plus",
+      "kind": "w8a8",
+      "bytes": 200552543,
+      "sha256": "00b72fc7b6073fe0eabad84552acb9f3809a3a613a72c7b66b03d87d1f3436a4",
+      "files": [
+        {
+          "path": "base_plus/w8a8/model.bin",
+          "bytes": 157314816,
+          "sha256": "dead471423362fb591a7426a46b8cc3e875b80fe025597cc612105ece960179b"
+        },
+        {
+          "path": "base_plus/w8a8/model.json",
+          "bytes": 2866,
+          "sha256": "ba7d369977c422bca2f4866cbf0d65c59c2842e654f300b1e469e4cf58b1872d"
+        },
+        {
+          "path": "base_plus/w8a8/model.manifest",
+          "bytes": 10242,
+          "sha256": "f7e6fd5d033b7304158275e734cf9ee86302018594d28ea70bb545cf4d482862"
+        },
+        {
+          "path": "base_plus/w8a8/weights.bin",
+          "bytes": 64788496,
+          "sha256": "10c2862adca57cf872f9c0e4496bdbdffb77bd32dad27192bcd24ee98ddd59ad"
+        }
+      ]
+    },
+    "sam21-base_plus-w4a4-20261010.tar.gz": {
+      "model": "base_plus",
+      "kind": "w4a4-20261010",
+      "bytes": 176333757,
+      "sha256": "34d53abcc8395bdb16b8473f7e3b2086e4349c567189938a75b31acc3e7f5f77",
+      "files": [
+        {
+          "path": "base_plus/w4a4/20261010/factors.bin",
+          "bytes": 510704,
+          "sha256": "65b2ff140e59e16bb466f976268d5552e6ada9e1166081883425c601180ab7cf"
+        },
+        {
+          "path": "base_plus/w4a4/20261010/fc2static.bin",
+          "bytes": 1652,
+          "sha256": "53651031185fcc64c44aa9d52a82d3d41bc48b62e87331f9f72ec0ab41d92e6a"
+        },
+        {
+          "path": "base_plus/w4a4/20261010/model.bin",
+          "bytes": 157314816,
+          "sha256": "7343d1282d6b2532092f57d69da084274e58c6fb7e1bd449740e989ee172d82e"
+        },
+        {
+          "path": "base_plus/w4a4/20261010/model.json",
+          "bytes": 2866,
+          "sha256": "ba7d369977c422bca2f4866cbf0d65c59c2842e654f300b1e469e4cf58b1872d"
+        },
+        {
+          "path": "base_plus/w4a4/20261010/model.manifest",
+          "bytes": 10242,
+          "sha256": "f7e6fd5d033b7304158275e734cf9ee86302018594d28ea70bb545cf4d482862"
+        },
+        {
+          "path": "base_plus/w4a4/20261010/weights.bin",
+          "bytes": 64788496,
+          "sha256": "28216e4a89f5a7b905a0e51d7634cd164d64f87c0d9c967c55af508af49e4216"
+        }
+      ]
+    },
+    "sam21-base_plus-w4a4-20261011.tar.gz": {
+      "model": "base_plus",
+      "kind": "w4a4-20261011",
+      "bytes": 176332324,
+      "sha256": "8346a78179ecc6a26cf4fcb29b1f3d16990912a40c64465ba282d882e9b2df88",
+      "files": [
+        {
+          "path": "base_plus/w4a4/20261011/factors.bin",
+          "bytes": 510704,
+          "sha256": "e1370c7327be32d718ebcafee7ed8e7de6313528acef06228868d9c721d3083c"
+        },
+        {
+          "path": "base_plus/w4a4/20261011/fc2static.bin",
+          "bytes": 1652,
+          "sha256": "019b74fb8bba98bbb68276ee78e92c1d07052a23d60e4d5c91959f9819b05965"
+        },
+        {
+          "path": "base_plus/w4a4/20261011/model.bin",
+          "bytes": 157314816,
+          "sha256": "10296b4013730bf8d3dded2821578854397640398d45cd050ad920284c45600a"
+        },
+        {
+          "path": "base_plus/w4a4/20261011/model.json",
+          "bytes": 2866,
+          "sha256": "ba7d369977c422bca2f4866cbf0d65c59c2842e654f300b1e469e4cf58b1872d"
+        },
+        {
+          "path": "base_plus/w4a4/20261011/model.manifest",
+          "bytes": 10242,
+          "sha256": "f7e6fd5d033b7304158275e734cf9ee86302018594d28ea70bb545cf4d482862"
+        },
+        {
+          "path": "base_plus/w4a4/20261011/weights.bin",
+          "bytes": 64788496,
+          "sha256": "e0ec0df3bbffa7caf169058ceaf1e68b9fcfd5358607b469f34972bd15081f7d"
+        }
+      ]
+    },
+    "sam21-base_plus-w4a4-20261012.tar.gz": {
+      "model": "base_plus",
+      "kind": "w4a4-20261012",
+      "bytes": 176332455,
+      "sha256": "779f6552140999c6cee355930cbf8c18fb5fe7d21d0f0f926bb00583b4a0f74a",
+      "files": [
+        {
+          "path": "base_plus/w4a4/20261012/factors.bin",
+          "bytes": 510704,
+          "sha256": "a4319b4fd41951182d083e3fbdeb10d0a614a4aa1f87639549df2f9e0527be5c"
+        },
+        {
+          "path": "base_plus/w4a4/20261012/fc2static.bin",
+          "bytes": 1652,
+          "sha256": "afc397093f34b5b7213c402aaf655bad2d87f3ea8dc3e8353e4726a7afeff4ca"
+        },
+        {
+          "path": "base_plus/w4a4/20261012/model.bin",
+          "bytes": 157314816,
+          "sha256": "5ae938ffe3970e671fc42fed184d8f4e8d6f7752573a9c6fdc82f3f721578733"
+        },
+        {
+          "path": "base_plus/w4a4/20261012/model.json",
+          "bytes": 2866,
+          "sha256": "ba7d369977c422bca2f4866cbf0d65c59c2842e654f300b1e469e4cf58b1872d"
+        },
+        {
+          "path": "base_plus/w4a4/20261012/model.manifest",
+          "bytes": 10242,
+          "sha256": "f7e6fd5d033b7304158275e734cf9ee86302018594d28ea70bb545cf4d482862"
+        },
+        {
+          "path": "base_plus/w4a4/20261012/weights.bin",
+          "bytes": 64788496,
+          "sha256": "580db2d38d8328137aaec46ff9dba1fc99f3d58db7737d7c8d96099a5fda755c"
+        }
+      ]
+    },
+    "sam21-base_plus-w4a4-20261013.tar.gz": {
+      "model": "base_plus",
+      "kind": "w4a4-20261013",
+      "bytes": 176338376,
+      "sha256": "890cdbce2bf5daac0816976d86d040fed75a8646339c28449a7e7bd96a7ae3b5",
+      "files": [
+        {
+          "path": "base_plus/w4a4/20261013/factors.bin",
+          "bytes": 510704,
+          "sha256": "080c4358ecd1ecd55189336819e2cd013f5e320baabbbd7fbc2b7f4dfb9dad1f"
+        },
+        {
+          "path": "base_plus/w4a4/20261013/fc2static.bin",
+          "bytes": 1652,
+          "sha256": "b33363e7003b154f3d629cb8ecd2b76ef5321067f2138f308568b27b162f896a"
+        },
+        {
+          "path": "base_plus/w4a4/20261013/model.bin",
+          "bytes": 157314816,
+          "sha256": "99606c4201ff8eabde3aaaaf4b02902dccaed1d961034bcbff459bd2af05a8e3"
+        },
+        {
+          "path": "base_plus/w4a4/20261013/model.json",
+          "bytes": 2866,
+          "sha256": "ba7d369977c422bca2f4866cbf0d65c59c2842e654f300b1e469e4cf58b1872d"
+        },
+        {
+          "path": "base_plus/w4a4/20261013/model.manifest",
+          "bytes": 10242,
+          "sha256": "f7e6fd5d033b7304158275e734cf9ee86302018594d28ea70bb545cf4d482862"
+        },
+        {
+          "path": "base_plus/w4a4/20261013/weights.bin",
+          "bytes": 64788496,
+          "sha256": "da4970dcb49a679c03826af1b76e85deb55c22422398e84f20dc080b9c19ef07"
+        }
+      ]
+    },
+    "sam21-base_plus-w4a4-20261014.tar.gz": {
+      "model": "base_plus",
+      "kind": "w4a4-20261014",
+      "bytes": 176333754,
+      "sha256": "cab4b9694990ba76478a128ece104597b673e9125f5e6cb2219ce6b5f5421ca1",
+      "files": [
+        {
+          "path": "base_plus/w4a4/20261014/factors.bin",
+          "bytes": 510704,
+          "sha256": "0f0e3c7c278b2c0d7a90590c36e542fbc50600ebe984ba1e88bc04675a981908"
+        },
+        {
+          "path": "base_plus/w4a4/20261014/fc2static.bin",
+          "bytes": 1652,
+          "sha256": "8414402bc4edcf6d2c7891dd0aeef146e56eb6bcbd1f72c76969e0dc9381fc9b"
+        },
+        {
+          "path": "base_plus/w4a4/20261014/model.bin",
+          "bytes": 157314816,
+          "sha256": "69123f3e7d62bb1c92e9e1033906635f1c0fb390063c2a5aa870c7ff522f514d"
+        },
+        {
+          "path": "base_plus/w4a4/20261014/model.json",
+          "bytes": 2866,
+          "sha256": "ba7d369977c422bca2f4866cbf0d65c59c2842e654f300b1e469e4cf58b1872d"
+        },
+        {
+          "path": "base_plus/w4a4/20261014/model.manifest",
+          "bytes": 10242,
+          "sha256": "f7e6fd5d033b7304158275e734cf9ee86302018594d28ea70bb545cf4d482862"
+        },
+        {
+          "path": "base_plus/w4a4/20261014/weights.bin",
+          "bytes": 64788496,
+          "sha256": "0f13f9f887ae6258e9f040984c4429d03973c48ba21201df223dd574115176cc"
+        }
+      ]
+    },
+    "sam21-large-reference.tar.gz": {
+      "model": "large",
+      "kind": "reference",
+      "bytes": 836806660,
+      "sha256": "c4c8c26c8f891c5081b7365f34ee22e7f27e88ed7a50e3357be4e6cc5a4dddc2",
+      "files": [
+        {
+          "path": "large/reference.pt",
+          "bytes": 898083611,
+          "sha256": "2647878d5dfa5098f2f8649825738a9345572bae2d4350a2468587ece47dd318"
+        }
+      ]
+    },
+    "sam21-large-w8a8.tar.gz": {
+      "model": "large",
+      "kind": "w8a8",
+      "bytes": 592773603,
+      "sha256": "9d72c6dd902e16263055e9ed36dec68ee83c81f363f8da15863a496fae74e3ea",
+      "files": [
+        {
+          "path": "large/w8a8/model.bin",
+          "bytes": 455606272,
+          "sha256": "9a4f3899d4006fd975b5c35f537b23f2792a16db8f404013fac07d47aa4113b1"
+        },
+        {
+          "path": "large/w8a8/model.json",
+          "bytes": 5556,
+          "sha256": "27d7c54aa55c890274cb5ca85f8f330424b91cf5658c2c9925b94de969748d7f"
+        },
+        {
+          "path": "large/w8a8/model.manifest",
+          "bytes": 20582,
+          "sha256": "0b57d4a365e494c4d564ccd695c722d5f552d1b36c96432d8503c511ebec3e57"
+        },
+        {
+          "path": "large/w8a8/weights.bin",
+          "bytes": 199645840,
+          "sha256": "1a1b87208c53917573c27ce0729133e3cd16e32122431e08768ea276769e2eac"
+        }
+      ]
+    },
+    "sam21-large-w4a4-20261010.tar.gz": {
+      "model": "large",
+      "kind": "w4a4-20261010",
+      "bytes": 516786216,
+      "sha256": "4f117ac5a5a8cd99faa5c95c5d3d96177092678686b1349b423aa867c25b86e6",
+      "files": [
+        {
+          "path": "large/w4a4/20261010/factors.bin",
+          "bytes": 1306960,
+          "sha256": "8faac76a6b97f018a4816834c2614c6963fe99133367e3d0ed4b1a4142e415c0"
+        },
+        {
+          "path": "large/w4a4/20261010/fc2static.bin",
+          "bytes": 4016,
+          "sha256": "9cf3774b2eeb7c8f0b773ec45fe8ca6659c85badabe13254300f1e842214a0cf"
+        },
+        {
+          "path": "large/w4a4/20261010/model.bin",
+          "bytes": 455606272,
+          "sha256": "d5ffb98955c7a66916cfa38f1a396612fbb2aa91d9de81192bdd31fff79cb779"
+        },
+        {
+          "path": "large/w4a4/20261010/model.json",
+          "bytes": 5556,
+          "sha256": "27d7c54aa55c890274cb5ca85f8f330424b91cf5658c2c9925b94de969748d7f"
+        },
+        {
+          "path": "large/w4a4/20261010/model.manifest",
+          "bytes": 20582,
+          "sha256": "0b57d4a365e494c4d564ccd695c722d5f552d1b36c96432d8503c511ebec3e57"
+        },
+        {
+          "path": "large/w4a4/20261010/weights.bin",
+          "bytes": 199645840,
+          "sha256": "89f5f867ab3423956cd0570f32df2d08c1baadc18c656a333d34451c49b185a6"
+        }
+      ]
+    },
+    "sam21-large-w4a4-20261011.tar.gz": {
+      "model": "large",
+      "kind": "w4a4-20261011",
+      "bytes": 516788271,
+      "sha256": "a89bbac274eac45b48bc03062204f7ec3227388a2a51ce6db927774a6f139e15",
+      "files": [
+        {
+          "path": "large/w4a4/20261011/factors.bin",
+          "bytes": 1306960,
+          "sha256": "2401a4b25d49cbffc3416be7dcfa75a4812e147de8977b3eb675a588417ac75e"
+        },
+        {
+          "path": "large/w4a4/20261011/fc2static.bin",
+          "bytes": 4016,
+          "sha256": "c435a4171fe1d889c77019f89340fb9b84ff59d20aa7a71a964611a35eaa5213"
+        },
+        {
+          "path": "large/w4a4/20261011/model.bin",
+          "bytes": 455606272,
+          "sha256": "7d07cddc4a6200f78f332f3a1127895d1973caf1502288ebd7480fe73d1fa60c"
+        },
+        {
+          "path": "large/w4a4/20261011/model.json",
+          "bytes": 5556,
+          "sha256": "27d7c54aa55c890274cb5ca85f8f330424b91cf5658c2c9925b94de969748d7f"
+        },
+        {
+          "path": "large/w4a4/20261011/model.manifest",
+          "bytes": 20582,
+          "sha256": "0b57d4a365e494c4d564ccd695c722d5f552d1b36c96432d8503c511ebec3e57"
+        },
+        {
+          "path": "large/w4a4/20261011/weights.bin",
+          "bytes": 199645840,
+          "sha256": "a63e6c3be561218fab412282ae536b220c3a56492a2416f21a4403b0fd325d99"
+        }
+      ]
+    },
+    "sam21-large-w4a4-20261012.tar.gz": {
+      "model": "large",
+      "kind": "w4a4-20261012",
+      "bytes": 516786292,
+      "sha256": "3ad938e77f0126b6549d5bf91e89546686d45812e9efd2775cfe6a696bc13a1c",
+      "files": [
+        {
+          "path": "large/w4a4/20261012/factors.bin",
+          "bytes": 1306960,
+          "sha256": "b49b815b31651106deb95581036a5d5c53bca00e1eac5ed7357cb2e5dceb81b1"
+        },
+        {
+          "path": "large/w4a4/20261012/fc2static.bin",
+          "bytes": 4016,
+          "sha256": "991371f39a6b1baaa000219344be1bcca1731e2bd522a68b5047b809d27c4a7c"
+        },
+        {
+          "path": "large/w4a4/20261012/model.bin",
+          "bytes": 455606272,
+          "sha256": "e5c4274915c7e7b0a698d1e7653c08b314e5fb407e05c9a810905bf5fea261c5"
+        },
+        {
+          "path": "large/w4a4/20261012/model.json",
+          "bytes": 5556,
+          "sha256": "27d7c54aa55c890274cb5ca85f8f330424b91cf5658c2c9925b94de969748d7f"
+        },
+        {
+          "path": "large/w4a4/20261012/model.manifest",
+          "bytes": 20582,
+          "sha256": "0b57d4a365e494c4d564ccd695c722d5f552d1b36c96432d8503c511ebec3e57"
+        },
+        {
+          "path": "large/w4a4/20261012/weights.bin",
+          "bytes": 199645840,
+          "sha256": "bce51fb41e1379250129baf143086237f765d20d4e38b2200d1c554645618a12"
+        }
+      ]
+    },
+    "sam21-large-w4a4-20261013.tar.gz": {
+      "model": "large",
+      "kind": "w4a4-20261013",
+      "bytes": 516787482,
+      "sha256": "8876d6e7ab8ce861cc2522636f83114b59527305a41f33e1b4968b1754206979",
+      "files": [
+        {
+          "path": "large/w4a4/20261013/factors.bin",
+          "bytes": 1306960,
+          "sha256": "3baf0aee368d79e2172d3abb672a4233e3f85377ba334dddd52cdf2270ba2f1e"
+        },
+        {
+          "path": "large/w4a4/20261013/fc2static.bin",
+          "bytes": 4016,
+          "sha256": "d40ae2f1e5e08806f047b19f921ca5f4b3639efeedec9235a2a9ff9864bc5290"
+        },
+        {
+          "path": "large/w4a4/20261013/model.bin",
+          "bytes": 455606272,
+          "sha256": "35dda8fd027b61636d02013035efd3e73aacc0bc9aa6c2cb1258c14e285aaee1"
+        },
+        {
+          "path": "large/w4a4/20261013/model.json",
+          "bytes": 5556,
+          "sha256": "27d7c54aa55c890274cb5ca85f8f330424b91cf5658c2c9925b94de969748d7f"
+        },
+        {
+          "path": "large/w4a4/20261013/model.manifest",
+          "bytes": 20582,
+          "sha256": "0b57d4a365e494c4d564ccd695c722d5f552d1b36c96432d8503c511ebec3e57"
+        },
+        {
+          "path": "large/w4a4/20261013/weights.bin",
+          "bytes": 199645840,
+          "sha256": "226daaf849246da2d82fee0fc00eaeb8b28ceddce1c3eb8ec055b419def65251"
+        }
+      ]
+    },
+    "sam21-large-w4a4-20261014.tar.gz": {
+      "model": "large",
+      "kind": "w4a4-20261014",
+      "bytes": 516788750,
+      "sha256": "b1595eaecdb8605fe2e899df5c9c6986b4fb63da0e0f306d83ce35a93e10c597",
+      "files": [
+        {
+          "path": "large/w4a4/20261014/factors.bin",
+          "bytes": 1306960,
+          "sha256": "84cecce4d7d3bade19c16f501037a4ca7f80aea56ce7edd527ea06d151e4c25b"
+        },
+        {
+          "path": "large/w4a4/20261014/fc2static.bin",
+          "bytes": 4016,
+          "sha256": "61cd9a1a11803b97734a38d99e9615bea11677a9d9a18c1da160e94ecf803607"
+        },
+        {
+          "path": "large/w4a4/20261014/model.bin",
+          "bytes": 455606272,
+          "sha256": "bcaae0a2019cfca416698526f889c1df5070696d8bca2c6e9db77f15d13ea121"
+        },
+        {
+          "path": "large/w4a4/20261014/model.json",
+          "bytes": 5556,
+          "sha256": "27d7c54aa55c890274cb5ca85f8f330424b91cf5658c2c9925b94de969748d7f"
+        },
+        {
+          "path": "large/w4a4/20261014/model.manifest",
+          "bytes": 20582,
+          "sha256": "0b57d4a365e494c4d564ccd695c722d5f552d1b36c96432d8503c511ebec3e57"
+        },
+        {
+          "path": "large/w4a4/20261014/weights.bin",
+          "bytes": 199645840,
+          "sha256": "57e975ba3894b56109a8c96c9bd497ae3f49ad46dfdfa3ee67816fe5c5fdcd0f"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,7 @@
+SAM2.1 model architecture, original checkpoints and the SAM2 decoder are from
+Meta's Segment Anything 2 (https://github.com/facebookresearch/sam2),
+Copyright (c) Meta Platforms, Inc. and affiliates, licensed under Apache 2.0.
+
+The release weights derive from the official SAM2.1 Hiera T/S/B+/L checkpoints.
+SGHAQuant adds grouped Hadamard transforms, quantized encoder weights and
+CUDA inference kernels. The SAM2 dependency is pinned in requirements.txt.
